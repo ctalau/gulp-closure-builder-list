@@ -7,6 +7,13 @@ This plugin receives several dependency files for Closure Libraries, e.g. create
 
 The need for such a plugin comes from [JsTestDriver](https://github.com/wesabe/JsTestDriver) which requires a list of files to be loaded during tests. When you are working with closure library, you may need to load hundreds of file, so maintaining such a configuration file manually is not feasible. 
 
+## Install
+
+```
+npm install --save-dev gulp-closure-builder-list
+```
+
+
 ## Example
 
 ```js
