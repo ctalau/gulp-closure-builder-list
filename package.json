@@ -1,0 +1,35 @@
+{
+  "name": "gulp-closure-builder-list",
+  "version": "0.0.1",
+  "description": "A gulp.js plugin that implements the Google ClosureBuilder's list output_mode",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctalau/gulp-closure-builder-list.git"
+  },
+  "author": {
+    "name": "Talau Cristian",
+    "url": "https://github.com/ctalau"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "google",
+    "closure",
+    "closurebuilder",
+    "manifest",
+    "gulpplugin"
+  ],
+  "dependencies": {
+    "collections": "^1.2.3",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.5",
+    "through": "^2.3.7"
+  },
+  "devDependencies": {
+  }
+}
