@@ -3,6 +3,10 @@
 
 > Gulp plugin that implements Google ClosureBuilder's list output mode
 
+This plugin receives several dependency files for Closure Libraries, e.g. created with [gulp-closure-deps](https://github.com/steida/gulp-closure-deps) and outputs all files that contain transitive depdendencies of a specified entry point.
+
+The need for such a plugin comes from [JsTestDriver](https://github.com/wesabe/JsTestDriver) which requires a list of files to be loaded during tests. When you are working with closure library, you may need to load hundreds of file, so maintaining such a configuration file manually is not feasible. 
+
 ## Example
 
 ```js
