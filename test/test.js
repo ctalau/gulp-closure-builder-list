@@ -9,6 +9,8 @@ var assert = require('assert');
 var closureDir = 'node_modules/google-closure-library/closure/goog/'
 
 describe('gulp-closure-builder-list', function() {
+  this.timeout(5000);
+
   it('should generate a manifest file', function(done) {
     var stream =
       gulp.src(['test/js/*.js', closureDir + '/**/*.js'])
