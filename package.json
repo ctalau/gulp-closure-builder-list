@@ -1,6 +1,6 @@
 {
   "name": "gulp-closure-builder-list",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A gulp.js plugin that implements the Google ClosureBuilder's list output_mode",
   "license": "MIT",
   "repository": {

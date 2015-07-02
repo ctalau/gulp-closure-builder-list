@@ -28,11 +28,16 @@ module.exports = function(opt) {
 
     function addTransitiveDeps(symbol) {
       added.add(symbol);
-      deps[symbol].forEach(function(dependency) {
-        if (!added.has(dependency)) {
-          addTransitiveDeps(dependency);
-        }
-      });
+			var symDeps = deps[symbol];
+			if (symDeps) {			
+				symDeps.forEach(function(dependency) {
+					if (!added.has(dependency)) {
+						addTransitiveDeps(dependency);
+					}
+				});
+			} else {
+				gutil.log('No deps found for symbol', symbol, deps);
+			}
       manifest.push(symbolsFile[symbol]);
     }
 
